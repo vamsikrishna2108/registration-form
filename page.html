@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
+</head>
+<body>
+   
+        
+
+<form name="Form" onsubmit="return validateForm()" >
+    <h1>Registration Form</h1>
+    <div class="box">
+        <label>Full Name</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <label>Date of Birth</label>
+        <input type="date" name="date" id="date">
+        <div class="error" id="dateErr"></div>
+    </div>
+    <div class="box">
+        <label>Email Address</label>
+        <input type="text" name="email" id="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10" id="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="box">
+        <label>Country</label>
+        <select name="country" id="country">
+            <option>Select</option>
+            <option>London</option>
+            <option>India</option>
+            <option>America</option>
+        </select> 
+        <div class="error" id="countryErr"></div>
+    </div>
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+    <div class="box">
+        <label>Create Password</label>
+        <input type="text" name="password" id="password">
+        <div class="error" id="passwordErr"></div>
+    </div>
+    <div class="box">
+        <label>Re-Enter Password</label>
+        <input type="text" name="confirm" id="confirm">
+        <div class="error" id="conpasswordErr"></div>
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+        
+    </div>
+</form>
+
+
+</body>
+</html>
